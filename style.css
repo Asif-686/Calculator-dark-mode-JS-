@@ -61,28 +61,12 @@
     grid-row: 2 / span 1;
     height: auto; 
   } 
-  .calculator__key--sqrt {
-    grid-column: 4 / 5;
-    grid-row: 2 / span 1;   
-    height: auto;
-    font-size: 1.6rem;
-    font-weight: 800;
-  } 
+ 
   .toggle{
     display:flex;
     flex-direction: row-reverse;
   }
-   /* Dark mode for the calculator 
-  .calculator__output {
-    background: hsl(207, 19%, 61%); Change the background to a dark gray
-  }
-  .calculator__keys {
-    background: hsl(207, 19%, 61%); Change the background to a dark gray
-  }
-  .calculator__key {
-    background: hsl(206, 14%, 41%); Change the keys to a darker gray
-    color: hsl(255, 100%, 100%); Change the text color to white
-  } */
+
   .switch {
     position: relative;
     display: inline-block;
@@ -134,8 +118,6 @@
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
-  
-  /* Rounded sliders */
   .slider.round {
     border-radius: 35px;
   }
