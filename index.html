@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.2/math.min.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="toggle" id="toggle" ><label class="switch">
+            <input type="checkbox" name="darkmode">
+            <span class="slider round"></span>
+        </label></div>
+        <div class="calculator__output" id="calculator__output">0</div>
+        <div class="calculator__keys" id="calculator__keys">
+          <button class="calculator__key calculator__key--operator"onclick="takeValueOnScreen('+')">+</button>
+          <button class="calculator__key calculator__key--operator"onclick="takeValueOnScreen('-')">-</button>
+          <button class="calculator__key calculator__key--operator"onclick="takeValueOnScreen('*')">&times;</button>
+          <button class="calculator__key calculator__key--operator"onclick="takeValueOnScreen('/')">÷</button>
+          <button class="calculator__key" onclick="takeValueOnScreen('7')">7</button>
+          <button class="calculator__key"onclick="takeValueOnScreen('8')">8</button>
+          <button class="calculator__key"onclick="takeValueOnScreen('9')">9</button>
+          <button class="calculator__key"onclick="takeValueOnScreen('4')">4</button>
+          <button class="calculator__key"onclick="takeValueOnScreen('5')">5</button>
+          <button class="calculator__key"onclick="takeValueOnScreen('6')">6</button>
+          <button class="calculator__key"onclick="takeValueOnScreen('1')">1</button>
+          <button class="calculator__key"onclick="takeValueOnScreen('2')">2</button>
+          <button class="calculator__key"onclick="takeValueOnScreen('3')">3</button>
+          <button class="calculator__key"onclick="takeValueOnScreen('0')">0</button>
+          <button class="calculator__key"onclick="takeValueOnScreen('.')">.</button>
+          <button class="calculator__key"onclick="takeValueOnScreen('AC')">AC</button>
+          
+          <button class="calculator__key calculator__key--enter" id="enter" onclick="takeValueOnScreen('=')">=</button>
+          <button class="calculator__key calculator__key--dark" onclick="takeValueOnScreen('C')">C</button>
+        </div>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
