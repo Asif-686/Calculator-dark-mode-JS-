@@ -32,7 +32,7 @@ var flag = 0;
 
 var displayResult = '';
 function takeValueOnScreen(number) {
-  if (number == 'C' && display.length > 0){
+  if (number == 'C' && display.length >= 0){
     
       display = display.slice(0,-1);
   }
